@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Snap Brief</title>
+    <style>
+        body {
+            width: max-content;
+            max-width: 800px;
+            padding: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        button {
+            background-color: #6ab04c;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        button:disabled {
+            background-color: #bee89e;
+            cursor: not-allowed;
+        }
+
+        p {
+             font-size: medium;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Snap Brief Extension</h1>
+    <button id="summarise" type="button">Summarise</button>
+    <p id="output"></p>
+    <script src="popup.js"></script>
+</body>
+
+</html>
